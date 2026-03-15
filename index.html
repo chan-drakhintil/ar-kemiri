@@ -14,6 +14,7 @@
         width: 100vw;
         height: 100vh;
         overflow: hidden; 
+        background-color: black; /* warna loading hitam */
     }
     #startBtn {
         z-index: 999;
@@ -34,7 +35,7 @@
 </head>
 <body>
     
-    <button id="startBtn">Storyboard</button>
+    <button id="startBtn">Cerita</button>
 
     <div id="infoCard" style="display: none; position: absolute; top: 20%; left: 50%; transform: translateX(-50%); width: 80%; max-width: 300px; background: rgba(255, 255, 255, 0.9); padding: 20px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); z-index: 999; text-align: center; font-family: sans-serif;">
         <h3 style="margin-top: 0; color: #2e7d32;">Pohon Kemiri</h3>
@@ -46,7 +47,7 @@
     mindar-image="imageTargetSrc: ./marker_kemiri.mind; autoStart: true;"
     embedded
     color-space="sRGB"
-    renderer="colorManagement: true, physicallyCorrectLights"
+    renderer="colorManagement: true, physicallyCorrectLights, alpha: true"
     vr-mode-ui="enabled: false"
     device-orientation-permission-ui="enabled: false">
 
